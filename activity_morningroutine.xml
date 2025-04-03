@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgc"
+    tools:context=".morningroutine">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="-180dp"
+        android:text="TASKS TO DO"
+        android:layout_marginBottom="40dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000" />
+
+    <!-- Task List -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_above="@id/bottomNavigation"
+        tools:itemCount="6"
+        tools:listitem="@layout/routine_list_item_layout"/>
+
+    <!-- Quick Add and Edit Task Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="72dp">
+
+        <Button
+            android:id="@+id/quickadd"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:text="Quick Add"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#000"
+            android:paddingHorizontal="24dp" />
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:background="#D9C2A6"
+        android:layout_alignParentBottom="true">
+
+        <!-- Plan Icon -->
+        <ImageView
+            android:id="@+id/clockk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/clockk"
+            android:contentDescription="Plan Icon"
+            android:padding="8dp" />
+
+        <!-- Idea Icon -->
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/search"
+            android:contentDescription="Idea Icon"
+            android:padding="8dp" />
+
+        <!-- Profile Icon -->
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/profileicon"
+            android:contentDescription="Profile Icon"
+            android:padding="8dp" />
+    </LinearLayout>
+</RelativeLayout>

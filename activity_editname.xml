@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgc">
+
+    <!-- Page Header -->
+    <TextView
+        android:id="@+id/editPageHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Page"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Name Input Field -->
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:hint="Name"
+        android:background="@drawable/backgndm"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/editPageHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp" />
+
+    <!-- Gender Input Field -->
+    <EditText
+        android:id="@+id/editGender"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:hint="Gender"
+        android:background="@drawable/backgndm"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/editName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp" />
+
+    <!-- Age Input Field -->
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:hint="Age"
+        android:background="@drawable/backgndm"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/editGender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp" />
+
+    <!-- Done Button -->
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#564A43"
+        android:text="Done"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editAge"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="20dp" />
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:background="#D9C2A6"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Plan Icon -->
+        <ImageView
+            android:id="@+id/clockk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/clockk"
+            android:contentDescription="Plan Icon"
+            android:padding="8dp" />
+
+        <!-- Idea Icon -->
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/search"
+            android:contentDescription="Idea Icon"
+            android:padding="8dp" />
+
+        <!-- Profile Icon -->
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/profileicon"
+            android:contentDescription="Profile Icon"
+            android:padding="8dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/bgc"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Why do you want to use this app?"
+        android:textColor="#000000"
+        android:layout_marginStart="-20dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/subtitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(You can choose multiple options also)"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:layout_marginBottom="50dp" />
+    <Button
+        android:id="@+id/option1"
+        android:layout_width="288dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#B9A598"
+        android:text="To finally wake up before my alarm yells at me"
+        android:textColor="#640E0E"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        tools:ignore="DuplicateIds" />
+    <Button
+        android:id="@+id/option2"
+        android:layout_width="288dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#B9A598"
+        android:text="To trick my brain into thinking I’m a morning person"
+        android:textColor="#640E0E"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/option3"
+        android:layout_width="288dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#B9A598"
+        android:text="To become so productive that even coffee is jealous"
+        android:textColor="#640E0E"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/option4"
+        android:layout_width="288dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#B9A598"
+        android:text="To stop snoozing 10 times before getting up"
+        android:textColor="#640E0E"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/option5"
+        android:layout_width="288dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#B9A598"
+        android:text="To trick my life together... at least until noon"
+        android:textColor="#640E0E"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/option6"
+        android:layout_width="288dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#B9A598"
+        android:text="To actually follow a routine, instead oj just thinking about it"
+        android:textColor="#640E0E"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:layout_marginTop="50dp"
+        android:text="NEXT"
+        android:backgroundTint="#3B2C22"
+        android:textColor="#FFF" />
+</LinearLayout>
